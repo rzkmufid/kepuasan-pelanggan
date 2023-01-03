@@ -8,4 +8,4 @@ Kelompok 8 - IT Banking
 *   Habibilal Alta
 *   Muhammad Haiqal
 
-Ini merupakan project dari matakuliah it banking, dengan tema "Sistem Kepuasan Nasabah"
+Ini merupakan project dari matakuliah IT Banking, dengan tema "Sistem Kepuasan Nasabah"
