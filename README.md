@@ -9,3 +9,5 @@ Kelompok 8 - IT Banking
 *   Muhammad Haiqal
 
 Ini merupakan project dari matakuliah IT Banking, dengan tema "Sistem Kepuasan Nasabah"
+
+Project ini tidak memiliki halaman Admin
