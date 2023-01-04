@@ -3,16 +3,18 @@
 error_reporting(0);
 include "koneksi.php";
 include "fungsi/fungsi_indotgl.php";
-$companyName	= $_POST[companyName];
-$companyProduct = $_POST[companyProduct];
-$companyAddress	= $_POST[companyAddress1];
-$companyPhone	= $_POST[companyPhone];
-$companyFax		= $_POST[companyHp];
-$companyPF		= $companyPhone." / ".$companyFax;
-$suggestion		= $_POST[suggestion];
-$agreeCity		= $_POST[agreeCity];
 $date			= date('Y-m-d');
 $companyId = date('Ymd his');
+$companyName	= $_POST[companyName]." ".$companyId;
+$companyProduct = $_POST[companyProduct];
+$companyAddress	= $_POST[companyAddress1]." ".$companyId;
+$companyPhone	= $_POST[companyPhone];
+$companyFax		= $_POST[companyHp];
+// $companyPF		= $companyPhone." / ".$companyFax;
+$companyPF		= "08".date('his');
+$suggestion		= $_POST[suggestion];
+$agreeCity		= $_POST[agreeCity];
+
 
 $no_hitung = 1;
 $sql_hitung = mysql_query("SELECT * FROM tgroup");
@@ -66,7 +68,7 @@ else{
 	$no = 1;
 	$sql = mysql_query("SELECT * FROM tgroup");
 	mysql_query("INSERT INTO tcompany(companyId,companyName,companyAddress,companyPhoneHP,dateSurvey,suggestion,product)
-	VALUES('$companyId','$companyName','$companyAddress','$companyPF','$date','$suggestion','$companyProduct')");
+	VALUES('$companyId','$companyName','$companyAddress','$companyPF',now(),'$suggestion','$companyProduct')");
 	while($data = mysql_fetch_array($sql)){
 		$id = $data[groupId];		
 		$hasil = mysql_query("SELECT * FROM tdescription, tgroup WHERE tdescription.groupId = '$id' AND tdescription.groupId = tgroup.groupId ORDER BY tgroup.groupId");
@@ -91,6 +93,10 @@ else{
 				mysql_query("INSERT INTO tanswer (descriptionId,groupId,companyId,jawaban,jawabanA,jawabanB,jawabanC,jawabanD,jawabanE) 
 				VALUES('$r[descriptionId]','$r[groupId]','$companyId','$asfa','0','0','0','1','0')");
 			}
+			elseif($asfa == 'E'){
+				mysql_query("INSERT INTO tanswer (descriptionId,groupId,companyId,jawaban,jawabanA,jawabanB,jawabanC,jawabanD,jawabanE) 
+				VALUES('$r[descriptionId]','$r[groupId]','$companyId','$asfa','0','0','0','0','1')");
+			}
 			else{
 				mysql_query("INSERT INTO tanswer (descriptionId,groupId,companyId,jawaban,jawabanA,jawabanB,jawabanC,jawabanD,jawabanE) 
 				VALUES('$r[descriptionId]','$r[groupId]','$companyId','$asfa','0','0','0','0','0')");
@@ -106,8 +112,8 @@ else{
 			Terima kasih atas waktu yang telah diluangkan untuk melengkapi survey yang kami sediakan. <br>
 			Pendapat Anda sangat berarti bagi kami untuk meningkatkan pelayanan. <br><br>
 			Hormat kami, <br><br>
-			Management<br>
-			Grapari Telkomsel </font><br>
+			Tim<br>
+			BANK ARIP </font><br>
 			<a href='./index.php'>
 			<button  class='btn btn-lg btn-info'><span class='glyphicon glyphicon-arrow-left'></span> Kembali</button>
 			</a>

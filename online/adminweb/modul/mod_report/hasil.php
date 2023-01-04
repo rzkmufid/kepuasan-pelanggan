@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            <i class="glyphicon glyphicon-new-window"></i> Hasil Kuisioner
+            <i class="glyphicon glyphicon-new-window"></i> Hasil Kuisioner Online
         </h1>
         <ol class="breadcrumb">
         	<li class="active">
