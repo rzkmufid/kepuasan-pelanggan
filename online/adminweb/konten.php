@@ -14,6 +14,9 @@ elseif ($module == 'description'){
 elseif ($module == 'hasil'){
 	include "modul/mod_report/hasil.php";
 }
+elseif ($module == 'hasil-offline'){
+	include "modul/mod_report/hasil-offline.php";
+}
 elseif ($module == 'grafik'){
 	include "modul/mod_report/grafik.php";
 }

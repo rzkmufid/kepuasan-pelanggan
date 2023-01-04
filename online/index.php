@@ -80,7 +80,11 @@
                                           <div class="page-header" style="margin-left:30px;">
                                             <h3>Informasi Pelanggan</h3>
                                           </div>
-                                          <div class="form-group">
+                                          <input type="hidden" name="companyName" value="Nasabah">
+                                          <input type="hidden" name="companyAddress1" value="Alamat">
+                                          <input type="hidden" name="companyProduct" value="Umum">
+                                          <input type="hidden" name="companyHp" value="08">
+                                          <!-- <div class="form-group">
                                              <label for="nama_pelanggan" class="control-label col-sm-2">Nama Pelanggan</label>
                                              <div class="col-sm-3">
                                                  <div class="input-group">
@@ -129,7 +133,7 @@
                                                      <input type="text" id="hp" class="form-control" name="companyHp" placeholder="No Handphone">
                                                  </div>
                                              </div>
-                                          </div>
+                                          </div> -->
                                           <div class="form-group">
                                              <label for="tgl" class="control-label col-sm-2">Tanggal</label>
                                              <div class="col-sm-3">
@@ -152,7 +156,7 @@
                               <tr>
                                   <td width="97%" valign="top" align="center" colspan="5" style="border-style: none; border-width: medium">
                                   <font face="Arial" size="1"><b>Mohon kesediaan Anda untuk memberikan 
-                                  penilaian dan masukan kepada GraPari Telkomsel, dimana hal ini sangat bermanfaat 
+                                  penilaian dan masukan kepada Bank ARIP, dimana hal ini sangat bermanfaat 
                                   untuk meningkatkan kualitas layanan kami.<br>
                                   </b><i>Silahkan diisi dengan mengklik option radio 
                                    serta keterangan sesuai dengan penilaian Anda 
@@ -255,7 +259,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <center><font color="white" size="1" >Created By Wahyu Budiman</font></center>
+               <center><font color="white" size="1" >Created By Kelompok 5</font></center>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -306,8 +310,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <center>Copyright &copy; 2016 Telkomsel Grapari<br> All rights reserved.</center>
-                        <center>Created by Wahyu Budiman.</center>
+                        <center>Copyright &copy; 2023 BANK ARIP<br> All rights reserved.</center>
+                        <center>Created by Kelompok 5.</center>
                     </div>
                 </div>
             </div>

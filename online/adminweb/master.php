@@ -21,7 +21,7 @@ else{
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin Telkomsel</title>
+    <title>Admin Bank ARIP</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/sb-admin.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -206,7 +206,10 @@ function gantipass()
                         <a href="?module=description"><i class="glyphicon glyphicon-book"></i> Manajemen Deskripsi </a>
                     </li>
                     <li class="<?php if($_GET['module']=='hasil'){echo'active';} ?>">
-                        <a href="?module=hasil&sub=all"><i class="glyphicon glyphicon-new-window"></i> Hasil Kuesioner</a>
+                        <a href="?module=hasil&sub=all"><i class="glyphicon glyphicon-new-window"></i> Hasil Online</a>
+                    </li>
+                    <li class="<?php if($_GET['module']=='hasil-offline'){echo'active';} ?>">
+                        <a href="?module=hasil-offline&sub=all"><i class="glyphicon glyphicon-new-window"></i> Hasil Offline</a>
                     </li>
                     
                 </ul>
