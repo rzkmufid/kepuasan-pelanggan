@@ -50,7 +50,7 @@
         <div class="panel panel-default" >
           <div class="panel-body" style="background-color:#e6e6e6;">
             <div class="col-lg-12">
-                <img class="img-responsive" src="./images/bannersurvey.jpg" alt="" style="height:300px;width:1290px">
+                <!-- <img class="img-responsive" src="./images/bannersurvey.jpg" alt="" style="height:300px;width:1290px"> -->
                 <hr>
             </div>
               <div class="col-lg-12">
@@ -78,7 +78,7 @@
                                   <td>
                                       <div class="form-horizontal"  style="margin-top:20px;background-color:#fff;padding-top:20px;padding-bottom:20px;">
                                           <div class="page-header" style="margin-left:30px;">
-                                            <h3>Informasi Pelanggan</h3>
+                                            <h3>Tanggal Pengisian</h3>
                                           </div>
                                           <input type="hidden" name="companyName" value="Nasabah">
                                           <input type="hidden" name="companyAddress1" value="Alamat">
